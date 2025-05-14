@@ -5,4 +5,5 @@
 **Disclaimer**
 This project is created purely for **educational purposes**. The code and techniques shared here should only be used in **isolated, controlled environments** (e.g., virtual machines) and **never on unauthorized systems**.  
 I do not condone any illegal or unethical use of this knowledge.
+
 ![KatakCry](KatakCry.jpg)
